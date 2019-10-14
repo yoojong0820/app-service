@@ -11,7 +11,7 @@ type Props = {
 export const LandingHandler: React.FC<Props> = (props: Props) => {
     return (
         <SomeDataContext.Consumer>
-            {({fieldA, fieldB, fieldC}) => {
+            {({fieldA, fieldB, fieldC, userName}) => {
                 return (
                     <SessionContext.Consumer>
                         {({geolocation}) => {
@@ -19,6 +19,7 @@ export const LandingHandler: React.FC<Props> = (props: Props) => {
                                 fieldA={fieldA}
                                 fieldB={fieldB}
                                 fieldC={fieldC}
+                                userName={userName}
                                 geolocation={geolocation}
                             />
                         }}

@@ -21,6 +21,13 @@ const title: TextStyle = {
 
 const value: TextStyle = {
     marginTop: 40,
+    marginBottom: 50,
+    color: '#000',
+    fontSize: 16,
+};
+
+const apiResult: TextStyle = {
+    marginTop: 40,
     color: '#000',
     fontSize: 16,
 };
@@ -30,5 +37,6 @@ export const styles = StyleSheet.create({
     container,
     wrapper,
     title,
-    value
+    value,
+    apiResult
 });
