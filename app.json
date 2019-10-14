@@ -1,8 +1,8 @@
 {
-  "name": "AppService",
-  "displayName": "AppService",
+  "name": "app-service",
+  "displayName": "app-service",
   "expo": {
-    "name": "AppService",
+    "name": "app-service",
     "slug": "expo-template-bare",
     "privacy": "unlisted",
     "sdkVersion": "35.0.0",

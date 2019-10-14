@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 95784,
+  "expoServerNgrokUrl": "https://47-tq4.yoojong-bang.app-service.exp.direct",
+  "packagerNgrokUrl": "https://packager.47-tq4.yoojong-bang.app-service.exp.direct",
+  "ngrokPid": 95812,
   "webpackServerPort": null
 }

@@ -6,14 +6,14 @@ import SomeDataProvider from "./src/context/SomeData/SomeDataProvider";
 
 const AppContainer = createAppContainer(AppNavigator);
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <SessionProvider>
-                <SomeDataProvider>
-                    <AppContainer/>
-                </SomeDataProvider>
-            </SessionProvider>
-        );
-    }
-}
+const App: React.FC = () => {
+    return (
+        <SessionProvider>
+            <SomeDataProvider>
+                <AppContainer/>
+            </SomeDataProvider>
+        </SessionProvider>
+    );
+};
+
+export default App;
