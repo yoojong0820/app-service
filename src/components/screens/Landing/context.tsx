@@ -1,31 +1,24 @@
 import React from "react";
-import {NavigationParams, NavigationScreenProp, NavigationState} from "react-navigation";
 import SessionContext from "../../../context/Session";
 import SomeDataContext from "../../../context/SomeData";
 import Landing from ".";
 
-type Props = {
-    navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-}
-
-export const LandingHandler: React.FC<Props> = (props: Props) => {
+export const LandingHandler: React.FC = () => {
     return (
         <SomeDataContext.Consumer>
-            {({fieldA, fieldB, fieldC, userName}) => {
-                return (
-                    <SessionContext.Consumer>
-                        {({geolocation}) => {
-                            return <Landing
-                                fieldA={fieldA}
-                                fieldB={fieldB}
-                                fieldC={fieldC}
-                                userName={userName}
-                                geolocation={geolocation}
-                            />
-                        }}
-                    </SessionContext.Consumer>
-                )
-            }}
+            {({fieldA, fieldB, fieldC, userName}) =>
+                <SessionContext.Consumer>
+                    {({geolocation}) =>
+                        <Landing
+                            fieldA={fieldA}
+                            fieldB={fieldB}
+                            fieldC={fieldC}
+                            userName={userName}
+                            geolocation={geolocation}
+                        />
+                    }
+                </SessionContext.Consumer>
+            }
         </SomeDataContext.Consumer>
     );
 };

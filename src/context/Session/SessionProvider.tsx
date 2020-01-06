@@ -16,13 +16,14 @@ class SessionProvider extends React.Component<Props, State> {
     }
 
     setGeolocation = (location: any, postalAddress: any, callback?: () => void) => {
+        const {street, city, region, country} = postalAddress;
         this.setState({
             geolocation: {
                 latitude: location.coords.latitude,
                 longitude: location.coords.longitude,
-                location:  postalAddress.street + ', ' + postalAddress.city + ', ' + postalAddress.region + ', ' + postalAddress.country
+                location:  street + ', ' + city + ', ' + region + ', ' + country
             }
-        });
+        }, callback);
     };
 
     render() {

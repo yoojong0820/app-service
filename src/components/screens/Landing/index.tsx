@@ -38,7 +38,7 @@ class Landing extends React.Component<Props, State> {
 
     _trigger = () => {
         let bodyValue: SendMessageRequest = {userName: this.props.userName};
-        fetch(SERVER_API_ENDPOINT +  "send-message", {
+        fetch(SERVERLESS_API_ENDPOINT +  "send-message", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
